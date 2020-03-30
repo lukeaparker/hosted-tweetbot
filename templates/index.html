@@ -1,5 +1,3 @@
-{% block content %}
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,22 +5,30 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
-
+  <link rel="stylesheet" href="../static/styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,800" rel="stylesheet">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
+
 </head>
 <body>
+{% block content %}
+<body style="background-color:#474747;">
+<h1 style="color:#a8a7a7;">
+
 
   <!-- CALL TO ACTION -->
-  <div class="jumbotron text-center">
+  <div style="background:transparent !important" class="jumbotron text-center">
     <h1>{{ sample }}</h1>
     <p class="lead mb-4">Press Submit to See Random Word</p>
     <div class="d-flex justify-content-center">
       <form action="#" class='form-inline'>
           <a href="/" class="btn btn-secondary ml-2">Submit</a>
         </form>
+
+    {% endblock %}
     </div>
   </div>
 
-  {% endblock %}
 
 
